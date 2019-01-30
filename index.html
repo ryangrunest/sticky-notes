@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadata Goes Here -->
+	<title>Sticky Notes</title>
+	<!-- Link Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- Link Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="Assets/style.css">
+	<!-- Link Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+
+<body onload="checkEdits()">
+	<!-- Visual Data Goes Here -->
+
+	<!-- NavBar -->
+	<nav class="navbar navbar-dark bg-dark">
+  		<span class="navbar-brand mb-0 h1">stickynotes</span>
+  		<span>
+  			<!-- Add Button -->
+			<button type="button" id="addButton" value="save-my-edits" class="btn btn-light">Add</button>
+			<!-- Subtract Button -->
+			<button type="button" id="subtractButton" value="save-my-edits" class="btn btn-light">Subtract</button>
+  			<!-- Save Button -->
+			<button type="button" value="save-my-edits" onclick="saveEdits()" class="btn btn-light">Save</button>
+			<!-- Reset Button -->
+			<button type="button" value="clear-my-edits" onclick="resetStorage()" class="btn btn-light">Clear</button>	
+  		</span>
+  		
+	</nav>
+
+	<!-- Sticky Note Row 1 -->
+	<div class="container-fluid mt-3">
+		<div class="card-columns">
+			<div class="card">
+				<div class="card-body">
+					<h5 id="first-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="first-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="second-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="second-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="third-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="third-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="fourth-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="fourth-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+
+
+
+
+			<div class="card">
+				<div class="card-body">
+					<h5 id="fifth-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="fifth-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="sixth-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="sixth-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="seventh-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="seventh-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="eighth-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="eighth-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="ninth-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="ninth-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="tenth-header" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="tenth-body" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header11" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body11" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header12" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body12" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header13" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body13" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header14" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body14" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header15" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body15" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header16" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body16" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header17" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body17" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 id="header18" spellcheck="false" class="card-title" contenteditable="true">stickynote</h5>
+					<p id="body18" class="card-text" contenteditable="true">Click Here To Edit</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+<!-- Link Custom JS -->
+<script type="text/javascript" src="Assets/script.js"></script>
+
+<!-- Copy JS For Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

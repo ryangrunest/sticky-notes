@@ -1,0 +1,19 @@
+*:focus {
+	outline: #343a40 !important;
+	spell
+}
+.card-body {
+	background-color: #FFFFC3;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 10px gray;
+	height: 200px;
+}
+.card-text {
+	font-family: 'Indie Flower', cursive;
+}
+.card-text:hover {
+	color: gray;
+}
+.hidden {
+	display: none !important;
+}
