@@ -1,16 +1,31 @@
 var stickies = document.querySelectorAll(".card");
 var addButton = document.querySelector("#addButton");
 var subtractButton = document.querySelector("#subtractButton");
-i = 0;
+i = 1;
 
-subtractButton.addEventListener("click", function() {
-	stickies[3].classList.add("hidden");
-	i++;
+stickies[0].style.display = "inline-block";
+// add button functionality
+addButton.addEventListener("click", function() {
+	if (i < 17) {
+		stickies[i].style.display = "inline-block";
+		i++;
+	} else {
+		alert("can't add anymore stickies");
+	}
 });
 
-addButton.addEventListener("click", function() {
-	console.log("clicked");
-})
+// subtract button functionality
+subtractButton.addEventListener("click", function() {
+	if (i >= 1) {
+		stickies[i].style.display = "none";
+		i--;
+	} else {
+		alert("can't remove anymore stickies");
+		i = 1;
+	}
+});
+
+
 
 
 function saveEdits() {
