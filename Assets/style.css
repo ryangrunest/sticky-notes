@@ -14,7 +14,7 @@
 .card-text:hover {
 	color: gray;
 }
-@media (min-width: 576px) {
+@media (min-width: 0px) {
 .card-columns .card {
 	display: none;
 	}
