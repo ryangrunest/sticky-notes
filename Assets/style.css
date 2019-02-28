@@ -14,3 +14,13 @@
 .card-text:hover {
 	color: gray;
 }
+@media (min-width: 850px) {
+	.card-columns {
+		column-count: 3;
+	}
+}
+@media (min-width: 576px) {
+	.card-columns {
+		column-count: 1;
+	}
+}

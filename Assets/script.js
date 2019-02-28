@@ -17,15 +17,6 @@ if (localStorage.getItem(localStorage.key('counter')) === null) {
 
 
 
-
-
-// function saveEdits() {
-// // alert the user the edits have been saved
-// alert("Saved!");
-// };
-
-
-
 // on keyup functions to store the entered data in the array
 $('.card-columns').on('keyup', '.card-title', function() {
 	cardIndex = $(this).attr('id');
