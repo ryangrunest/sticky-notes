@@ -14,8 +14,22 @@
 .card-text:hover {
 	color: gray;
 }
-@media (max-width: 850px) {
+@media (max-width: 980px) {
 	.card-columns {
 		column-count: 1;
+	}
+	.navbar {
+		height: 150px;
+	}
+	.btn {
+		height: 100px;
+	}
+	.navbar-brand {
+		font-size: 50px;
+	}
+}
+@media (max-width: 720px) {
+	.navbar {
+		height: 250px;
 	}
 }
