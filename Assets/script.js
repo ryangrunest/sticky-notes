@@ -14,6 +14,8 @@ if (localStorage.getItem(localStorage.key('counter')) === null) {
 	console.log(counter);
 }
 
+
+
 $('#reduce-font').on('click', function() {
 	var headerPix = $('.card-title').css('font-size');
 	headerPix.replace('px', '');
@@ -38,11 +40,6 @@ $('#increase-font').on('click', function() {
 	$('.card-text').css('font-size', `${bodyPix}px`);
 	$('.card-title').css('font-size', `${headerPix}px`);
 });
-
-
-
-
-
 
 
 

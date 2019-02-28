@@ -19,7 +19,7 @@
 		column-count: 1;
 	}
 	.navbar {
-		height: 150px;
+		height: 250px;
 	}
 	.btn {
 		height: 100px;
@@ -36,6 +36,9 @@
 }
 @media (max-width: 720px) {
 	.navbar {
-		height: 250px;
+		height: 350px;
+	}
+	.btn {
+		margin-top: 5px;
 	}
 }
