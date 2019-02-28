@@ -14,6 +14,35 @@ if (localStorage.getItem(localStorage.key('counter')) === null) {
 	console.log(counter);
 }
 
+$('#reduce-font').on('click', function() {
+	var headerPix = $('.card-title').css('font-size');
+	headerPix.replace('px', '');
+	headerPix = parseInt(headerPix);
+	headerPix -= 1;
+	var bodyPix = $('.card-text').css('font-size');
+	bodyPix.replace('px', '');
+	bodyPix = parseInt(bodyPix);
+	bodyPix -= 1;
+	$('.card-text').css('font-size', `${bodyPix}px`);
+	$('.card-title').css('font-size', `${headerPix}px`);
+});
+$('#increase-font').on('click', function() {
+	var headerPix = $('.card-title').css('font-size');
+	headerPix.replace('px', '');
+	headerPix = parseInt(headerPix);
+	headerPix += 1;
+	var bodyPix = $('.card-text').css('font-size');
+	bodyPix.replace('px', '');
+	bodyPix = parseInt(bodyPix);
+	bodyPix += 1;
+	$('.card-text').css('font-size', `${bodyPix}px`);
+	$('.card-title').css('font-size', `${headerPix}px`);
+});
+
+
+
+
+
 
 
 
